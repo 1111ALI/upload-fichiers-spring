@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <title>Home Page</title>
+        <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+    </head>
+    <body class="container-fluid">
+        <h1>Liste des restaurants</h1>
+        <div>
+
+        </div>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Numero</th>
+                    <th>Nom</th>
+                    <th>Adresse</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="restau : ${restaurants}">
+                    <td th:text="${restau.restaurantId}"></td>
+                    <td th:text="${restau.name}"></td>
+                    <td th:text="${restau.adresse}"></td>
+                </tr>
+            </tbody>
+        </table>
+        <p>
+            Hello and welcome to my Web API build !
+        </p>
+        <script th:src="@{/js/bootstrap.min.js}"></script>
+    </body>
+</html>

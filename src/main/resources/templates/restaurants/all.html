@@ -1,0 +1,40 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Creer nouveau restaurant</title>
+        <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="mt-5">Liste des restaurants</h1>
+
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th>Numero</th>
+                    <th>Nom</th>
+                    <th>Adresse</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr th:each="restau : ${restaurants}">
+                    <td th:text="${restau.restaurantId}"></td>
+                    <td th:text="${restau.name}"></td>
+                    <td th:text="${restau.adresse}"></td>
+                </tr>
+                </tbody>
+            </table>
+            <p>
+                Hello and welcome to my Web API build !
+            </p>
+
+        </div>
+        <script th:src="@{/js/jquery-3.7.1.min.js}"></script>
+        <script th:src="@{/js/popper.min.js}"></script>
+        <script th:src="@{/js/bootstrap.min.js}"></script>
+    </body>
+</html>

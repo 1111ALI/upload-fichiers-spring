@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>RestoADACORP</title>
+</head>
+<body>
+<header>
+    <a href="#" class="logo"><span>R</span>esto-ADACORP</a>
+    <div class="menutoggle" onclick="toggleMenu();"> </div>
+    <ul class= "navbar">
+        <li> <a href="#banniere" onclick="toggleMenu();">Accueil</a></li>
+        <li> <a href="#apropos" onclick="toggleMenu();">A propos</a></li>
+        <li> <a href="#menu" onclick="toggleMenu();">Menu</a></li>
+        <li> <a href="#expert" onclick="toggleMenu();">Expert</a></li>
+        <li> <a href="#temoignage" onclick="toggleMenu();">Temoignage</a></li>
+        <li> <a href="#contact" onclick="toggleMenu();">Contact</a></li>
+        <a href="#" class="btn-reserve" onclick="toggleMenu();">Reservation</a>
+
+    </ul>
+</header>
+<section class="banniere" id="banniere">
+    <div class="contenu">
+        <h2> que des plats delicieux</h2>
+        <p> Un restaurant avec un cadre charmant et une ambiance des plus accueillante. C'est un réel plaisir de dîner dans ce lieu très agréable. Le personnel vous met aux petits soins par un travail d’équipe !</p>
+        <a href="#" class="btn1">Notre Menu</a>
+        <a href="#" class="btn2">Reservation</a>
+    </div>
+</section>
+<section class="apropos" id="apropos">
+    <div class="row">
+        <div class="col50">
+            <h2 class="titre-texte"> <span>A</span>propos de nous</h2>
+            <p>Une expérience culinaire exceptionnelle ! La nourriture est tout simplement délicieuse et le service remarquable. Un restaurant Camerounais qui incarne l'essence même de la cuisine traditionnelle. Si vous aimez le éru au couscous de manioc, et les nombreuses autres spécialités de notre cher pays, vous allez vous régaler !</p>
+        </div>
+        <div class="col50">
+            <div class="img">
+                <img src="./image menu/FB_IMG_1617630558381.jpg" alt="image">
+            </div>
+        </div>
+    </div>
+</section>
+<section class="menu" id="menu">
+    <div class="titre">
+        <h2 class="titre-texte"> <span>M</span>enu</h2>
+        <p>La cuisine est savoureuse et le service est irréprochable.</p>
+    </div>
+    <div class="contenu">
+        <div class="box">
+            <div class="imbox">
+                <img src="./image salades/salade_1.jpg" alt="image">
+            </div>
+            <div class="text">
+                <h3> Special Salade</h3>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imbox">
+                <img src="./image salades/salade_2.jpg" alt="image">
+            </div>
+            <div class="text">
+                <h3> Special Salade</h3>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imbox">
+                <img src="./image salades/salade_4.jpg" alt="image">
+            </div>
+            <div class="text">
+                <h3> Special Salade</h3>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imbox">
+                <img src="./image salades/menu_1.jpg" alt="image">
+            </div>
+            <div class="text">
+                <h3> Special Plantain</h3>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imbox">
+                <img src="./image salades/menu_2.jpg" alt="image">
+            </div>
+            <div class="text">
+                <h3> Special Crevette</h3>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imbox">
+                <img src="./image salades/menu_3.jpg" alt="image">
+            </div>
+            <div class="text">
+                <h3> Special Crevette</h3>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imbox">
+                <img src="./image salades/menu_4.jpg" alt="image">
+            </div>
+            <div class="text">
+                <h3> Special Riz</h3>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imbox">
+                <img src="./image salades/menu_7.jpg" alt="image">
+            </div>
+            <div class="text">
+                <h3> Special Pistache</h3>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div class="titre">
+            <a href="#" class="btn1">voir plus</a>
+        </div>
+    </div>
+</section>
+
+<section class="expert" id="expert">
+    <div class="titre">
+        <h2 class="titre-texte"> nos <span>E</span>xperts</h2>
+        <p>Un restaurant camerounais qui incarne l'essence même de la cuisine traditionnelle.</p>
+    </div>
+    <div class="contenu">
+        <div class="box">
+            <div class="imbox">
+                <img src="./image experts/expert_1.jpg" alt="image">
+            </div>
+            <div class="text">
+                <h3> Adama Ali</h3>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imbox">
+                <img src="./image experts/expert_2.JPG" alt="image">
+            </div>
+            <div class="text">
+                <h3> Andreas-JinkinsGuru</h3>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imbox">
+                <img src="./image experts/expert_3.jpg" alt="image">
+            </div>
+            <div class="text">
+                <h3> Ali Mohaman</h3>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imbox">
+                <img src="./image experts/expert_4.png" alt="image">
+            </div>
+            <div class="text">
+                <h3> Yann Kwadjio</h3>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+
+<section class="temoignage" id="temoignage">
+    <div class="titre">
+        <h2 class="titre-texte">que disent nos <span>C</span>lients</h2>
+        <p>Récemment vous avez découvert, entre amis ou en famille, un nouveau restaurant. Vous êtes tous d'accord : le service était impeccable et les plats étaient tout simplement succulents ! Vous avez vécu une si bonne expérience que vous souhaitez donner votre avis.</p>
+    </div>
+    <div class="contenu">
+        <div class="box">
+            <div class="imbox">
+                <img src="./image experts/expert_1.jpg" alt="image">
+            </div>
+            <div class="text">
+                <p> Un influenceur culinaire pourrait choisir ce restaurant ! Tous les plats sont esthétiques et délicieux.</p>
+                <h3> Adama Ali</h3>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imbox">
+                <img src="./image experts/expert_2.JPG" alt="image">
+            </div>
+            <div class="text">
+                <p> Le goût et la qualité des plats sont toujours excellents. Je ne peux que vous recommander ce restaurant</p>
+                <h3>Andreas-JinkinsGuru</h3>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imbox">
+                <img src="./image experts/expert_3.jpg" alt="image">
+            </div>
+            <div class="text">
+                <p> Ce restaurant rend hommage à la richesse des saveurs camerounaises. Les plats sont typiques et très goûtus ! Je vous le conseille si vous aimez les vrais poissons braisés !</p>
+                <h3> Ali Mohaman</h3>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imbox">
+                <img src="./image experts/expert_4.png" alt="image">
+            </div>
+            <div class="text">
+                <p> Le personnel de ce restaurant se soucie vraiment de ses clients. Ils étaient attentifs et sympathiques</p>
+                <h3> Yann Kwadjio</h3>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="contact" id="contact">
+    <div class="titre-noir">
+        <h2 class="titre-text"><span>c</span>ontact</h2>
+        <p>La cuisine est savoureuse et le service est irréprochable.</p>
+    </div>
+    <div class="contactform">
+        <h3> Envoyer un message</h3>
+        <div class="inputeboite">
+            <input type="text" placeholder="Nom">
+        </div>
+        <div class="inputeboite">
+            <input type="text" placeholder="email">
+        </div>
+        <div class="inputeboite">
+            <textarea placeholder="message"></textarea>
+        </div>
+        <div class="inputeboite">
+            <input type="submit" value="Envoyer">
+        </div>
+    </div>
+</section>
+<div class="copyright">
+    <p> copyright 2024 <a href="#">Ali Mohaman </a> formation ADACORP</p>
+</div>
+<script type="text/javascript">
+    window.addEventListener('scroll', function(){
+        const header = document.querySelector('header');
+        header.classList.toggle("sticky", window.scrollY>0);
+    });
+
+    function toggleMenu(){
+        const toggleMenu = document.querySelector('.menutoggle');
+        const navbar=document.querySelector('navbar');
+        menutoggle.classList.toggle('active');
+        navbar.classList.toggle('active');
+    }
+
+</script>
+</body>
+</html>
