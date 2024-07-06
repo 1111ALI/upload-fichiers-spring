@@ -1,4 +1,4 @@
-package cm.adacorp.thymeleaf.controller;
+package cm.adacorp.thymeleaf.controller.api;
 
 import cm.adacorp.thymeleaf.services.interf.UploadedFileServiceInterf;
 import lombok.RequiredArgsConstructor;
@@ -13,6 +13,7 @@ public class UploadedFileController {
     private final UploadedFileServiceInterf uploadedFileServiceInterf;
 
     public Map<String, String> saveFile(MultipartFile file){
+
         return uploadedFileServiceInterf.saveFile(file);
     }
 }

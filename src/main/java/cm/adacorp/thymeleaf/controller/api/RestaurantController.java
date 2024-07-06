@@ -1,4 +1,4 @@
-package cm.adacorp.thymeleaf.controller;
+package cm.adacorp.thymeleaf.controller.api;
 
 import cm.adacorp.thymeleaf.entity.Restaurant;
 import cm.adacorp.thymeleaf.services.interf.RestaurantService;

@@ -1,7 +1,8 @@
-package cm.adacorp.thymeleaf.controller;
+package cm.adacorp.thymeleaf.controller.front;
 
+import cm.adacorp.thymeleaf.controller.api.RestaurantController;
+import cm.adacorp.thymeleaf.controller.api.UploadedFileController;
 import cm.adacorp.thymeleaf.entity.Restaurant;
-import lombok.AllArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -64,6 +65,16 @@ public class NavigationController {
         model.addAttribute("reponse", reponse);
         return "upload";
     }
+
+    /**
+     * Debut des interface de l'authentification
+     */
+
+
+
+    /**
+     * Fin Authentification
+     */
 
 
 }

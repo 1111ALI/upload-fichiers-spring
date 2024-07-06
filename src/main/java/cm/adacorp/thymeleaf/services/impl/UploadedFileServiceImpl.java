@@ -25,19 +25,7 @@ public class UploadedFileServiceImpl implements UploadedFileServiceInterf {
     @Value("${file.upload-dir}")
     private String uploadDir;
 
-    private Path route;
-
-//    private final Path route = Paths.get("uploads");
-
-    @PostConstruct
-    public void init() {
-        this.route = Paths.get(uploadDir);
-        try{
-            Files.createDirectory(route);
-        }catch (IOException e){
-            throw new RuntimeException("Echec d'initialization du repertoire de base");
-        }
-    }
+    private Path route = Paths.get("uploads");
 
     @Override
     public Map<String, String> saveFile(MultipartFile file) {
