@@ -5,6 +5,7 @@ import jakarta.persistence.*;
 import lombok.*;
 
 import java.util.Set;
+import java.util.UUID;
 
 @Entity
 @Table(name = "persons")
@@ -18,7 +19,12 @@ public class Person {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long personId;
     private String username;
+    private String email;
+    private UUID activationCode;
+    private UUID resetCode;
     private String password;
+    private String passwordConfirmation;
     private Set<PersonRole> roles;
+    private boolean isActivated;
 
 }
